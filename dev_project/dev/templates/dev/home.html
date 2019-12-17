@@ -145,10 +145,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Accounts</a>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="{% static 'javascript:;' %}">Accounts</a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="login.html">Login</a>
+                                                <a class="dropdown-item" href="{% static 'dev/login.html' %}">Login</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="signup.html">Signup</a>
@@ -178,16 +178,21 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="reviews.html">Reviews</a>
+                                        <!-- <a class="dropdown-item" href="reviews.html">Reviews</a> -->
+                                      
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="pricing.html">Pricing</a>
+                                        <!-- <a class="dropdown-item" href="pricing.html">Pricing</a> -->
+                                      
+                                        <a class="dropdown-item" href="{% static 'dev/login.html' %}">Login</a>
+                                        <a class="dropdown-item" href="{% static 'dev/signup.html' %}">Signup</a>
+                                      
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                                        <a class="dropdown-item" href="{% static 'dev/faq.html' %}">FAQ</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="{% static 'dev/contact.html' %}">Contact</a>
                                     </li>
                                 </ul>
                             </li>
